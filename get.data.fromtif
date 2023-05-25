@@ -1,1 +1,12 @@
-to get data from .tif dile
+//to get data from .tif dile
+import rasterio
+
+# Open the GeoTIFF file
+with rasterio.open(r'C:\Users\username\Downloads\tifFileName.tif') as src:
+ 
+    # Read the data into numpy arrays. The NDVI data is in the first band.
+    ndvi_data = src.read(1)
+
+# Now ndvi_data is a 2D numpy array containing the NDVI data
+print(ndvi_data)
+
