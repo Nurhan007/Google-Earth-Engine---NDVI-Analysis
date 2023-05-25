@@ -1,4 +1,4 @@
-//to get data from .tif dile
+//to get data from .tif file
 import rasterio
 
 # Open the GeoTIFF file
